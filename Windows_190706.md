@@ -39,3 +39,5 @@
         manage-bde -status
         manage-bde -on C: -RecoveryPassword -RecoveryKey F:\
         manage-bde -unlock E: -RecoveryKey F:\84E151C1...7A62067A512.bek
+        
+Bitlocker使用手册——https://wenku.baidu.com/view/d1053520bd64783e09122bb5.html
