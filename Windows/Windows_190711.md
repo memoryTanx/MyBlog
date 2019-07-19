@@ -17,6 +17,7 @@
 	- 选中 `Command` ，在右侧的默认上右击修改
 	- 填入 `D:\IDE\Sublime Text 3\sublime_text.exe "%1"`
   > "%1"——%1 两边的双引号必加，这样才能打开路径带空格的文件或文件夹 
+
   ![](Windows_190711_files/4.png)
 9. 完成！效果如下
 
