@@ -1,5 +1,5 @@
 ##### 把软件设置到文件/文件夹的右击菜单上
-> 效果图
+
 ![](Windows_190711_files/5.png)
 
 1. `win + R` 打开运行
@@ -12,13 +12,12 @@
 	- 名称（ `Name` ）输入为 `icon` 
 	- 然后选中 `icon`， 右击选择修改
 	- 数值数据填入 `D:\IDE\Sublime Text 3\sublime_text.exe,0`（路径后面需加上 `,0` ）
-	- ![](Windows_190711_files/3.png)
+	![](Windows_190711_files/3.png)
 7. 在左侧选中 `Edit with Sublime Text3` 右击，新建项 `Command`
 	- 选中 `Command` ，在右侧的默认上右击修改
 	- 填入 `D:\IDE\Sublime Text 3\sublime_text.exe "%1"`
+ > "%1"——%1 两边的双引号必加，这样才能打开路径带空格的文件或文件夹 
   ![](Windows_190711_files/4.png)
-  > "%1"——%1 两边的双引号必加，这样才能打开路径带空格的文件或文件夹 
-	- ![](Windows_190711_files/4.png)
 9. 完成！效果如下
 ![](Windows_190711_files/5.png)
 
