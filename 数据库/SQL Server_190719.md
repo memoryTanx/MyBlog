@@ -20,9 +20,13 @@ DBCC FREEPROCCACHE
 **CHECKPOINT**：用于清空脏的数据缓存
 > CHECKPOINT 用于将脏页（Dirty Pages）写入硬盘，脏页（Dirty Pages) 是指数据从硬盘读到内存中，
 > 就是被读到缓存中，然后被修改过，导致内存中的数据页和硬盘中的数据页的内容不同。
+
+
 **DBCC DROPCLEANBUFFERS**：用于清空干净的数据缓存
 > 干净页（Clean Pages) 是指数据页被从硬盘读到内存中，没有被修改过的数据，
 > 这样内存中的数据页和硬盘中的数据页的内容是相同的
+
+
 **DBCC FREEPROCCACHE**：用于清空计划缓存
 
 
