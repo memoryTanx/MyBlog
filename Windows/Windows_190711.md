@@ -15,7 +15,9 @@
 	- ![](Windows_190711_files/3.png)
 7. 在左侧选中 `Edit with Sublime Text3` 右击，新建项 `Command`
 	- 选中 `Command` ，在右侧的默认上右击修改
-	- 填入 `D:\IDE\Sublime Text 3\sublime_text.exe %1`
+	- 填入 `D:\IDE\Sublime Text 3\sublime_text.exe "%1"`
+  ![](Windows_190711_files/4.png)
+  > "%1"——%1 两边的双引号必加，这样才能打开路径带空格的文件或文件夹 
 	- ![](Windows_190711_files/4.png)
 9. 完成！效果如下
 ![](Windows_190711_files/5.png)
@@ -23,19 +25,27 @@
 一键脚本
 ```
 Windows Registry Editor Version 5.00
-[HKEY_CLASSES_ROOT\*\shell\SublimeText3]
-@="用 SublimeText3 打开"
-"Icon"="C:\\Program Files (x86)\\Sublime Text3\\sublime_text.exe,0"
-[HKEY_CLASSES_ROOT\*\shell\SublimeText3\command]
-@="C:\\Program Files (x86)\\Sublime Text3\\sublime_text.exe %1"
-[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
-@="用 SublimeText3 打开"
-"Icon"="C:\\Program Files (x86)\\Sublime Text3\\sublime_text.exe,0"
-[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3\command]
-@="C:\\Program Files (x86)\\Sublime Text3\\sublime_text.exe %1"
+[HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text3]
+@="Edit with Sublime Text3"
+"Icon"="D:\\IDE\\Sublime Text 3\\sublime_text.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text3\command]
+@="D:\\IDE\\Sublime Text 3\\sublime_text.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\Edit with HX]
+@="Edit with HX"
+"Icon"="D:\\IDE\\HBuilderX.1.6.2.20190220.full\\HBuilderX\\HBuilderX.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\Edit with HX\command]
+@="D:\\IDE\\HBuilderX.1.6.2.20190220.full\\HBuilderX\\HBuilderX.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\Open to Sublime Text3]
+@="Open to Sublime Text3"
+"Icon"="D:\\IDE\\Sublime Text 3\\sublime_text.exe,0"
+[HKEY_CLASSES_ROOT\Directory\shell\Open to Sublime Text3\command]
+@="D:\\IDE\\Sublime Text 3\\sublime_text.exe \"%1\""
 
 注意：双斜杠
-C:\\Program Files (x86)\\Sublime Text3\\sublime_text.exe
+D:\\IDE\\Sublime Text 3\\sublime_text.exe
+文件名后缀：.reg
 ```
 ##### 添加软件到文件夹的右键菜单
 > 按路径 `HKEY_CLASSES_ROOT\directory\shell` 在左侧依次打开，其余步骤和上面相同。
