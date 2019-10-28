@@ -1,7 +1,7 @@
 - `easy_install`
 
 - 查看 pip 版本及路径 `pip -V`
-- 更新 pip python -m pip install --upgrade pip
+- 更新 pip `pip python -m pip install --upgrade pip`
 - 查询所有已安装的包 `pip list`
 - 查询可升级的包 `pip list --outdate`
 - 安装包 `pip install xxx`
