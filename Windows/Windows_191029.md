@@ -1,4 +1,4 @@
-### Windows 10 下， shift + 右击打开 cmd 窗口
+### Windows 10 下， shift + 右击打开‘cmd 窗口’
 
 1. 打开注册编辑器，找到如下：
 ```
@@ -15,3 +15,6 @@
 ![](Windows_191029_files/3.png)
 
 ### finsh!
+
+参考链接：
+[Win10如何把Shift+右键菜单中“在此处打开Powershell”改成命令行CMD](https://zhuanlan.zhihu.com/p/38166769)
