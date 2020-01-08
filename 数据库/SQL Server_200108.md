@@ -179,3 +179,7 @@ select @@version
 版权声明：本文为CSDN博主「敦厚的曹操」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 
 原文链接：https://blog.csdn.net/dxnn520/article/details/8456653
+
+参考链接：
+
+[](https://docs.microsoft.com/zh-cn/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-ver15)
