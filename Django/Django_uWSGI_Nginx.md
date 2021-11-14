@@ -108,6 +108,10 @@ WorkingDirectory=/home/ubuntu/plan_5x5x5
 ExecStart=/home/ubuntu/plan_5x5x5/venv/bin/uwsgi --ini /home/ubuntu/plan_5x5x5/plan_5x5x5_uwsgi.ini
 ExecStop=/home/ubuntu/plan_5x5x5/venv/bin/uwsgi --stop /home/ubuntu/plan_5x5x5/uWSGI/pid_plan_5x5x5.pid
 ExecReload=/home/ubuntu/plan_5x5x5/venv/bin/uwsgi --reload /home/ubuntu/plan_5x5x5/uWSGI/pid_plan_5x5x5.pid
+
+[Install]
+WantedBy=multi-user.target
+
 ```
 
 参考链接：
