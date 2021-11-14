@@ -1,0 +1,13 @@
+[Unit]
+Description=plan_5x5x5_uwsgi
+After=network.target
+
+[Service]
+Type=notify
+ExecStart=/home/ubuntu/plan_5x5x5/venv/bin/uwsgi --ini /home/ubuntu/plan_5x5x5/plan_5x5x5_uwsgi.ini
+ExecReload=/home/ubuntu/plan_5x5x5/venv/bin/uwsgi --reload /home/ubuntu/plan_5x5x5/plan_5x5x5.pid
+ExecStop=/home/ubuntu/plan_5x5x5/venv/bin/uwsgi --stop /home/ubuntu/plan_5x5x5/plan_5x5x5.pid
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
