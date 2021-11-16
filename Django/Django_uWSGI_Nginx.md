@@ -53,7 +53,7 @@ base = /home/ubuntu/plan_5x5x5
 
 module = %(project).wsgi:application
 # 静态文件挂载，--static-map mountpoint=path
-static-map = /static=static
+# static-map = /static=static
 
 
 # 开启一个主进程，管理其他进程
@@ -89,11 +89,14 @@ server {
 
     client_max_body_size 75M;
 
+    location /static {
+        alias /home/ubuntu/plan_5x5x5/static;
+    }
+
     location / {
         uwsgi_pass unix:/home/ubuntu/plan_5x5x5/uWSGI/socket_plan_5x5x5.socket;
         include /etc/nginx/uwsgi_params;
     }
-
 }
 ```
 
