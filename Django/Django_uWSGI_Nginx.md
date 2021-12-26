@@ -83,8 +83,14 @@ vacuum = true
 
 Nginx 配置
 ```conf
+upstream plan {
+    server unix:/home/ubuntu/a_plan_5x5x5/uWSGI/socket_plan_5x5x5.socket weight=1;  # weight 权重
+    server unix:/home/ubuntu/b_plan_5x5x5/uWSGI/socket_plan_5x5x5.socket weight=2;
+}
+
 server {
     listen 80;
+
     charset utf-8;
 
     client_max_body_size 75M;
@@ -94,9 +100,10 @@ server {
     }
 
     location / {
-        uwsgi_pass unix:/home/ubuntu/plan_5x5x5/uWSGI/socket_plan_5x5x5.socket;
+        uwsgi_pass plan;
         include /etc/nginx/uwsgi_params;
     }
+
 }
 ```
 
