@@ -27,28 +27,30 @@
 
 一键脚本
 ```
-Windows Registry Editor Version 5.00
-[HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text3]
-@="Edit with Sublime Text3"
-"Icon"="D:\\IDE\\Sublime Text 3\\sublime_text.exe,0"
-[HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text3\command]
-@="D:\\IDE\\Sublime Text 3\\sublime_text.exe \"%1\""
-
-[HKEY_CLASSES_ROOT\*\shell\Edit with HX]
-@="Edit with HX"
-"Icon"="D:\\IDE\\HBuilderX.1.6.2.20190220.full\\HBuilderX\\HBuilderX.exe,0"
-[HKEY_CLASSES_ROOT\*\shell\Edit with HX\command]
-@="D:\\IDE\\HBuilderX.1.6.2.20190220.full\\HBuilderX\\HBuilderX.exe \"%1\""
-
-[HKEY_CLASSES_ROOT\Directory\shell\Open to Sublime Text3]
-@="Open to Sublime Text3"
-"Icon"="D:\\IDE\\Sublime Text 3\\sublime_text.exe,0"
-[HKEY_CLASSES_ROOT\Directory\shell\Open to Sublime Text3\command]
-@="D:\\IDE\\Sublime Text 3\\sublime_text.exe \"%1\""
-
 注意：双斜杠
 D:\\IDE\\Sublime Text 3\\sublime_text.exe
 文件名后缀：.reg
+
+
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text3]
+@="Edit with Sublime Text3"
+"Icon"="I:\\ide\\Sublime Text 3\\sublime_text.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\Edit with Sublime Text3\command]
+@="I:\\ide\\Sublime Text 3\\sublime_text.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\Edit with HX]
+@="Edit with HX"
+"Icon"="I:\\ide\\HBuilderX\\HBuilderX.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\Edit with HX\command]
+@="I:\\ide\\HBuilderX\\HBuilderX.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\Open to Sublime Text3]
+@="Open to Sublime Text3"
+"Icon"="I:\\ide\\Sublime Text 3\\sublime_text.exe,0"
+[HKEY_CLASSES_ROOT\Directory\shell\Open to Sublime Text3\command]
+@="I:\\ide\\Sublime Text 3\\sublime_text.exe \"%1\""
+
 ```
 ##### 添加软件到文件夹的右键菜单
 > 按路径 `HKEY_CLASSES_ROOT\directory\shell` 在左侧依次打开，其余步骤和上面相同。
