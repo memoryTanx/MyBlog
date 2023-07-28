@@ -1,3 +1,16 @@
+### Python Build
+
+I:\ide\Sublime Text\Data\Packages\User\My-Python.sublime-build
+```json
+{
+    "shell_cmd": "start \"\" cmd /s /c \"venv\\Scripts\\activate & python -u \"$file\" & pause\"",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
+
+    "env": {"PYTHONIOENCODING": "utf-8"},
+}
+```
+
 ### Sublime Text Settings
 
 ```js
