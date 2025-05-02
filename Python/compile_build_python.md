@@ -19,4 +19,7 @@ cd Python-3.12.1
 make -j$(nproc)
 
 make install
+# or
+make altinstall
+
 ```
